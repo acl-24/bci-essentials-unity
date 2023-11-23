@@ -66,7 +66,7 @@ namespace BCIEssentials.StimulusObjects
         // What to do when targeted for training selection
         public virtual void OnTrainTarget()
         {
-            float scaleValue = 1.4f;
+            float scaleValue = 1.0f;
             Vector3 objectScale = transform.localScale;
             transform.localScale = new Vector3(objectScale.x * scaleValue, objectScale.y * scaleValue,
                 objectScale.z * scaleValue);
@@ -75,7 +75,7 @@ namespace BCIEssentials.StimulusObjects
         // What to do when untargeted
         public virtual void OffTrainTarget()
         {
-            float scaleValue = 1.4f;
+            float scaleValue = 1.0f;
             Vector3 objectScale = transform.localScale;
             transform.localScale = new Vector3(objectScale.x / scaleValue, objectScale.y / scaleValue,
                 objectScale.z / scaleValue);
